@@ -5,6 +5,7 @@ body {
   justify-content: center;
   margin: 20px;
 }
+
 .picture {
   width: 150px;
   height: 150px;
@@ -15,3 +16,11 @@ body {
   background-position: center;
   cursor: grab;
 }
+
+/* Example images */
+#drag1 { background-image: url('https://via.placeholder.com/150/FF0000/FFFFFF?text=1'); }
+#drag2 { background-image: url('https://via.placeholder.com/150/00FF00/FFFFFF?text=2'); }
+#drag3 { background-image: url('https://via.placeholder.com/150/0000FF/FFFFFF?text=3'); }
+#drag4 { background-image: url('https://via.placeholder.com/150/FFFF00/FFFFFF?text=4'); }
+#drag5 { background-image: url('https://via.placeholder.com/150/FF00FF/FFFFFF?text=5'); }
+#drag6 { background-image: url('https://via.placeholder.com/150/00FFFF/FFFFFF?text=6'); }

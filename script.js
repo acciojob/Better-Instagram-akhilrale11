@@ -1,4 +1,3 @@
-//your code here
 let draggedElement = null;
 
 document.querySelectorAll('.picture').forEach((div) => {
