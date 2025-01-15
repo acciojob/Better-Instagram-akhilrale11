@@ -1,9 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
 }
 
 .picture {
@@ -15,12 +21,13 @@ body {
   background-size: cover;
   background-position: center;
   cursor: grab;
+  transition: opacity 0.3s ease;
 }
 
 /* Example images */
-#drag1 { background-image: url('https://via.placeholder.com/150/FF0000/FFFFFF?text=1'); }
-#drag2 { background-image: url('https://via.placeholder.com/150/00FF00/FFFFFF?text=2'); }
-#drag3 { background-image: url('https://via.placeholder.com/150/0000FF/FFFFFF?text=3'); }
-#drag4 { background-image: url('https://via.placeholder.com/150/FFFF00/FFFFFF?text=4'); }
-#drag5 { background-image: url('https://via.placeholder.com/150/FF00FF/FFFFFF?text=5'); }
-#drag6 { background-image: url('https://via.placeholder.com/150/00FFFF/FFFFFF?text=6'); }
+#div1 { background-image: url('https://via.placeholder.com/150/FF0000/FFFFFF?text=1'); }
+#div2 { background-image: url('https://via.placeholder.com/150/00FF00/FFFFFF?text=2'); }
+#div3 { background-image: url('https://via.placeholder.com/150/0000FF/FFFFFF?text=3'); }
+#div4 { background-image: url('https://via.placeholder.com/150/FFFF00/FFFFFF?text=4'); }
+#div5 { background-image: url('https://via.placeholder.com/150/FF00FF/FFFFFF?text=5'); }
+#div6 { background-image: url('https://via.placeholder.com/150/00FFFF/FFFFFF?text=6'); }

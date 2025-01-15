@@ -15,21 +15,20 @@ document.querySelectorAll('.picture').forEach((div) => {
     e.target.style.opacity = '1';
   });
 
-  // Drag over event
+  // Allow dropping on a picture
   div.addEventListener('dragover', (e) => {
     e.preventDefault();
   });
 
-  // Drop event
+  // Drop event to swap images
   div.addEventListener('drop', (e) => {
     e.preventDefault();
-    const targetElement = e.target;
-
-    // Swap the background images
-    if (draggedElement !== targetElement) {
+    if (draggedElement !== e.target) {
       const draggedBg = draggedElement.style.backgroundImage;
-      draggedElement.style.backgroundImage = targetElement.style.backgroundImage;
-      targetElement.style.backgroundImage = draggedBg;
+      const targetBg = e.target.style.backgroundImage;
+
+      draggedElement.style.backgroundImage = targetBg;
+      e.target.style.backgroundImage = draggedBg;
     }
   });
 });
